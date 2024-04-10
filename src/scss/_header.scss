@@ -1,0 +1,46 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include adaptiveValue('padding-top', 40, 20);
+  @include adaptiveValue('padding-bottom', 53, 22);
+  &__container {
+    justify-content: center;
+  }
+
+  &__logo {
+    text-align: center;
+    &:not(:last-child) {
+      @include adaptiveValue('margin-bottom', 53, 20);
+    }
+  }
+}
+
+.header-logo {
+  @media screen and (max-width: $mobile) {
+    // width: 25%;
+    // left: 0;
+    // top: 0;
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-bottom: toRem(10);
+    }
+    img {
+      @media screen and (max-width: $mobile) {
+        width: 35%;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: toRem(15);
+    line-height: 160%;
+    text-transform: uppercase;
+    text-align: justify;
+    color: #fff;
+  }
+}

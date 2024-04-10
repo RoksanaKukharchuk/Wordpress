@@ -1,0 +1,46 @@
+//====================================================================================================
+.footer {
+    @include adaptiveValue("padding-top", 57, 25);
+    @include adaptiveValue("padding-bottom", 70, 35);
+  background-color: #1a1a1a;
+
+  &__container {
+  }
+
+  &__link {
+    font-weight: 300;
+    @include adaptiveValue("font-size", 25, 12);
+    font-size: toRem(20);
+    line-height: 140%;
+    text-align: center;
+    color: #888;
+    @include adaptiveValue("max-width", 350, 175);
+    span {
+      text-decoration: none;
+    }
+  }
+}
+.link-policy {
+  text-decoration: underline;
+  transition: color 0.3s ease 0s;
+  &:hover {
+    color: #d2d1d1;
+  }
+}
+.link-support {
+  text-decoration: underline;
+  transition: color 0.3s ease 0s;
+
+  &:hover {
+    color: #d2d1d1;
+  }
+}
+.link-tel {
+  transition: color 0.3s ease 0s;
+
+  &:hover {
+    color: #d2d1d1;
+  }
+}
+
+//====================================================================================================
